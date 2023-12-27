@@ -5,11 +5,11 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-10">
                 <h1>Create Post</h1>
             </div>
-            <div class="col-md-6">
-                
+            <div class="col-md-2">
+                <a href="{{ route('posts.index') }}" class="btn btn-primary" style="float: right;">List</a>
             </div>
         </div> 
         <form action="{{ route('posts.store') }}" method="POST">

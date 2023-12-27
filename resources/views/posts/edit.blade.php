@@ -2,7 +2,14 @@
 
 @section('content')
     <div class="container">
-        <h1>Edit Post</h1>
+        <div class="row">
+            <div class="col-md-10">
+                <h1>Edit Post</h1>
+            </div>
+            <div class="col-md-2">
+                <a href="{{ route('posts.index') }}" class="btn btn-primary" style="float: right;">List</a>
+            </div>
+        </div> 
         <form action="{{ route('posts.update', $post->id) }}" method="POST">
             @csrf
             @method('PUT')
